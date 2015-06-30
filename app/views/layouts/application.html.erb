@@ -8,11 +8,19 @@
 </head>
 <body>
 
+<!-- this display the header partial -->
 <%= render 'layouts/header' %>
 
 <div class="container">
+
+	<!-- the notice/alert classes enable us to send messages to out users -->
+	<p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
+
 	<%= yield %>
 
+	<!-- this display the footer partial -->
 	<%= render 'layouts/footer' %>
 </div>
 </body>
